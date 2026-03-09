@@ -11,33 +11,6 @@ This project implements a complete ML pipeline for predicting customer churn usi
 
 - **Hyperparameter Optimization using Optuna**
 
-## Project Structure
-CHURN-PREDICTION/
-├── data/
-│   ├── synthetic_customer_churn_100k.csv # Original Dataset
-│   └── processed/                # Preprocessed data
-│       ├── X_train_scaled.pkl    # Scaled features
-│       ├── X_test_scaled.pkl
-│       ├── x_train.pkl           # Unscaled features(reference)
-│       ├── x_test.pkl
-│       ├── y_train.pkl           # Target labels
-│       ├── y_test.pkl
-│       └── feature_names.pkl
-├── notebooks/
-│   ├── 01_load_data.ipynb        # Exploratory data analysis
-│   ├── 02_preprocessing.ipynb    # Data cleaning 
-│   ├── 03_optuna_hyperparameter_tuning.ipynb     # Optuna 
-│   └── 04_models_training.ipynb  # Model training & stacking                        
-├── models/
-│   ├── xgboost_optimized.pkl
-│   ├── lightgbm_optimized.pkl
-│   ├── catboost_optimized.pkl
-│   ├── meta_learner.pkl          # Stacking ensemble weights
-│   └── scaler.pkl                # Fitted StandardScaler
-├── requirements.txt              # Python dependencies
-└── README.md                     # This file
-
-
 ## Dataset Description
 
 The project uses a synthetic customer churn dataset of 100,000 customers.  
